@@ -10,10 +10,8 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
-import java.awt.TextArea;
 import java.awt.TextField;
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -104,11 +102,10 @@ public class Main  {
 	private JPanel makeArgumentPanel(String[] labels, String title) {
 		JPanel newPanel = new JPanel();
 		
-		
 		newPanel.setBorder(BorderFactory.createTitledBorder(
 		        BorderFactory.createEtchedBorder(), title));
-		//newPanel.setLayout(new GridLayout(labels.length,2));
-		newPanel.setLayout(new BoxLayout(newPanel,BoxLayout.Y_AXIS));
+		
+		newPanel.setLayout(new GridLayout(labels.length,2));
 		
 		for(String label : labels) {
 			Panel box = new Panel();
