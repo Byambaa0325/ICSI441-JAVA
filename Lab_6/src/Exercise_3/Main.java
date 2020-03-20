@@ -35,6 +35,11 @@ public class Main {
 		frame.setVisible(true);
 	}
 
+	/**
+	 * Build components
+	 * 
+	 * @return list of components
+	 */
 	private ArrayList<Component> getComponents() {
 		ArrayList<Component> components = new ArrayList<>();
 
@@ -44,19 +49,20 @@ public class Main {
 
 		TextArea dataTextField = new TextArea();
 		rightPanel.add(dataTextField);
-		
+
 		Panel saveButtonPanel = new Panel();
 		saveButtonPanel.add(new Button("Save"));
 		saveButtonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 		rightPanel.add(saveButtonPanel);
 
-		// Left
+		// Left Panel
 		Panel leftPanel = new Panel();
 
 		leftPanel.add(new Label("Application Form"));
 		Panel argumentPanel = makeArgumentPanel(new String[] { "First Name", "Last Name", "Address", "E-MailID" });
 		leftPanel.add(argumentPanel);
 
+		//Buttons Panel inside left panel
 		Panel buttonsPanel = new Panel();
 
 		Button submitButton = new Button("Submit");
@@ -66,7 +72,8 @@ public class Main {
 		buttonsPanel.add(submitButton);
 		buttonsPanel.add(clearButton);
 		buttonsPanel.add(exitButton);
-
+		
+		//Add actions to buttons
 		submitButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String dataText = "";
@@ -95,9 +102,11 @@ public class Main {
 				frame.dispose();
 			}
 		});
-
+		
 		buttonsPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+		
 		leftPanel.add(buttonsPanel);
+		
 		leftPanel.setLayout(new GridLayout(3, 1));
 		rightPanel.setLayout(new GridLayout(3, 1));
 
@@ -106,7 +115,12 @@ public class Main {
 
 		return components;
 	}
-
+	/**
+	 * Build argument boxes with textfield for input and label
+	 * from the list of label names
+	 * @param labels
+	 * @return Pane component with argument input panels
+	 */
 	private Panel makeArgumentPanel(String[] labels) {
 		Panel newPanel = new Panel();
 
