@@ -1,4 +1,4 @@
-<h1>Laboratory 5</h1>
+<h1>Laboratory 6</h1>
 <sub> Byambaa Bayarmandakh 17B1NUM0662<sub>
  
 <h2>Exerise 1</h2>
