@@ -5,7 +5,7 @@
 <i><sub>Exercise for Design Patterns</sub></i>
 
 
-[![DEMO](http://img.youtube.com/vi/m9J7sn19nBI/0.jpg)](http://www.youtube.com/watch?v=m9J7sn19nBI "Customer Annnouncement Program Demo")
+[![DEMO](http://img.youtube.com/vi/m9J7sn19nBI/0.jpg)](http://www.youtube.com/watch?v=m9J7sn19nBI "Customer Annnouncement Program Demo")]
 
 <h2>Code</h2>
 <p>
