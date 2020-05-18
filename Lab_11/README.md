@@ -8,14 +8,12 @@
 [![DEMO](http://img.youtube.com/vi/m9J7sn19nBI/0.jpg)](http://www.youtube.com/watch?v=m9J7sn19nBI "Customer Annnouncement Program Demo")
 
 <h2>Code</h2>
+<p>
+For the exercise, MySQL is used for the demo. The SQLCustomerDatabase is a DAO object for the Customer class. While the application
+handles communication with the database using DatabaseController that handles storage and DAO separately, SQL provides a nice way to directly work with the physical storage. Hence, it serves as a DAO and physical database at the same time.
 
-<p> For the exercise, MySQL is used for the demo. The SQLCustomerDatabase is a DAO object for the Customer class. While the application
-handles communication with the database using DatabaseController that handles storage and DAO separately, SQL provides a nice way to directly
-work with the physical storage. Hence, it serves as a DAO and physical database at the same time.</p>
-
-<p>The MySQLWritingStrategy is a strategy for the DatabaseController that disables the loading and reading operations that communicates
-changes of the DAO and physical database. The SQLCustomerDatabase directly runs SQL queries for update, delete, insert, search commands of the
-Database.
+The MySQLWritingStrategy is a strategy for the DatabaseController that disables the loading and reading operations that communicates
+changes of the DAO and physical database. The SQLCustomerDatabase directly runs SQL queries for update, delete, insert, search commands of the Database.
 </p>
 
 ```java
