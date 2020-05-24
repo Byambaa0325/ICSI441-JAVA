@@ -52,4 +52,8 @@ public class Customer {
 	public String[] getArguments() {
 		return new String[] {""+id,fName,lName};		
 	}
+	@Override
+	public String toString() {
+		return ""+id+", "+fName+", "+lName;
+	}
 }
